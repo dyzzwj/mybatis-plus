@@ -63,6 +63,11 @@ class ZwjMybatisPlusApplicationTests {
         personService.deleteBatchIds(Arrays.asList(1,2,3,4));
     }
 
+    @Test
+    public void test7(){
+       personService.selectList(null).forEach(System.out::println);
+    }
+
 
 
 }
